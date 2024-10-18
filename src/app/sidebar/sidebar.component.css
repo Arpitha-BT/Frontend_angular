@@ -1,0 +1,65 @@
+.sidebar {
+    height: 100%;
+    position: fixed;
+    /* Stay in place */
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    /* Space at the top */
+    color: white;
+    /* Text color */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow */
+    width: 250px;
+    /* Width of the sidebar */
+    background-color: #343a40;
+    /* Sidebar background color */
+    overflow-y: auto;
+    /* Allow scrolling if content overflows */
+}
+
+.sidebar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 20px;
+    /* Space around the brand */
+    text-decoration: none;
+    /* Remove underline */
+    color: #f8c291;
+    /* Brand color */
+}
+
+.sidebar-nav {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove padding */
+}
+
+.sidebar-item {
+    padding: 10px 20px;
+    /* Space around items */
+}
+
+.sidebar-link {
+    color: #adb5bd;
+    /* Light gray color */
+    text-decoration: none;
+    /* Remove underline */
+    display: block;
+    /* Full width */
+    transition: color 0.3s;
+    /* Smooth color change */
+}
+
+.sidebar-link:hover {
+    color: #f8c291;
+    /* Change color on hover */
+}
+
+.sidebar-link.active {
+    font-weight: bold;
+    /* Make active link bold */
+    color: #f8c291;
+    /* Active link color */
+}

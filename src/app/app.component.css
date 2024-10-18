@@ -1,0 +1,9 @@
+.content {
+    margin-top: 60px;
+    /* Space for the navbar */
+    margin-left: 250px;
+    /* Space for the sidebar */
+    padding: 20px;
+    /* Content padding */
+    overflow: auto;
+}
