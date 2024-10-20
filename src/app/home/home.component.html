@@ -1,4 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .box {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ccc;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
 <div class="container mt-4">
-    <h1>Welcome to the Home Page</h1>
-    <p>This is the main content of the home page.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="box">Management Register</div>
+    </div>
+    <div class="col-md-4">
+      <div class="box">Staff Register</div>
+    </div>
+    <div class="col-md-4">
+      <div class="box">Student Register</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="box">Subject Register</div>
+    </div>
+    <div class="col-md-4">
+      <div class="box">ID card</div>
+    </div>
+    <!-- <div class="col-md-4">
+      <div class="box">Div 6</div>
+    </div> -->
+  </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

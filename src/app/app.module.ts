@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -21,7 +23,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    MatButtonToggleModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [
     provideClientHydration()
