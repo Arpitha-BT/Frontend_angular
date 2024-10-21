@@ -7,8 +7,8 @@
     padding: 10px;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%; /* Ensure the navbar stretches across the full width */
+    right: 0;
+    width: calc(100% - 200px); /* Ensure the navbar stretches across the full width */
     height: 60px; /* Adjust height as needed */
     z-index: 1000; /* Keep navbar on top */
     box-sizing: border-box; /* Ensure padding doesn't affect width */

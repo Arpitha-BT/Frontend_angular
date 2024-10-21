@@ -1,9 +1,30 @@
 .content {
     margin-top: 60px;
-    /* Space for the navbar */
     margin-left: 250px;
-    /* Space for the sidebar */
-    padding: 20px;
-    /* Content padding */
+    /* padding: 20px; */
     overflow: auto;
+}
+
+.app-sidebar{
+    width: 200px;
+    background-color: red !important;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    /* margin-top: 10px; */
+}
+
+.second-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
 }

@@ -1,7 +1,7 @@
 .sidebar {
     position: fixed;
     /* Stay in place */
-    top: 60px;
+    top: 0px;
     left: 0;
     padding-top: 20px;
     /* Space at the top */
@@ -16,11 +16,13 @@
     overflow-y: auto;
     /* Allow scrolling if content overflows */
     position: fixed;
-    height: calc(100vh - 60px);
+    height: calc(100vh);
 }
 .sidebar-content{
      display: flex;
-        align-items: center; /* Vertically align items in the center */
+        flex-direction: column;
+
+        /* Vertically align items in the center */
       }
 
 
