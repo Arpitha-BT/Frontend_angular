@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -10,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    MatButtonToggleModule,
+    MatButtonModule,
     AppRoutingModule,
-    MatToolbarModule,
-    MatIconModule
+    MatMenuModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

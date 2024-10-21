@@ -8,19 +8,26 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 200px); /* Ensure the navbar stretches across the full width */
-    height: 60px; /* Adjust height as needed */
-    z-index: 1000; /* Keep navbar on top */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-    overflow: hidden; /* Prevent any overflow issues */
+    width: calc(100% - 200px);
+    /* Ensure the navbar stretches across the full width */
+    height: 60px;
+    /* Adjust height as needed */
+    z-index: 1000;
+    /* Keep navbar on top */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+    overflow: hidden;
+    /* Prevent any overflow issues */
     display: flex;
 }
+
 .main {
     display: flex;
-    align-items: center;  /* Vertically centers the image within the navbar */
-    justify-content: flex-start; 
-     /* Aligns content to the start */
-  }
+    align-items: center;
+    /* Vertically centers the image within the navbar */
+    justify-content: flex-start;
+    /* Aligns content to the start */
+}
 
 .navbar-brand {
     font-size: 1.75rem;
@@ -66,26 +73,25 @@
     background-color: #f8c291;
     /* Custom color for the mobile menu button */
 }
-.image-style img {
-    max-height: 40px; /* Set the height of the image (adjust as necessary) */
-    width: auto; /* Keep the image's aspect ratio intact */
-    display: block; /* Remove any extra space below the image */
-  }
 
-.title{
+.title {
     text-decoration: none;
     margin-right: 20px;
 }
+
 .toolbar {
     display: flex;
-    justify-content: space-between; /* Add space between the elements */
-    align-items: center; /* Align items vertically in the center */
-  }
+    justify-content: space-between;
+    /* Add space between the elements */
+    align-items: center;
+    /* Align items vertically in the center */
+}
 
-  .navbar-content {
+.navbar-content {
     display: flex;
-    align-items: center; /* Align items vertically */
-  }
+    align-items: center;
+    /* Align items vertically */
+}
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");

@@ -3,7 +3,7 @@
     /* Stay in place */
     top: 0px;
     left: 0;
-    padding-top: 20px;
+    padding-top: 0px;
     /* Space at the top */
     color: white;
     /* Text color */
@@ -18,13 +18,33 @@
     position: fixed;
     height: calc(100vh);
 }
-.sidebar-content{
-     display: flex;
-        flex-direction: column;
 
-        /* Vertically align items in the center */
-      }
+.sidebar-header {
+    background-color: #0d1cf5;
+    color: white;
+    padding: 10px;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: 40px;
+    font-style: italic;
+    /* Adjust this based on your design */
+    box-shadow: 0 2px 4px rgba(14, 13, 13, 0.1);
+}
 
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center margin-bottom: 0px;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
 
 .sidebar-brand {
     font-size: 1.5rem;
@@ -58,7 +78,7 @@
     display: block;
     /* Full width */
     transition: color 0.3s;
-    /* Smooth color change */   
+    /* Smooth color change */
 }
 
 .sidebar-link:hover {
@@ -71,4 +91,15 @@
     /* Make active link bold */
     color: #f8c291;
     /* Active link color */
+}
+
+.navbar-image {
+    height: 60px;
+    width: 60px;
+}
+
+.sidebar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
