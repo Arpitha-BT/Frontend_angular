@@ -1,20 +1,13 @@
-.sidebar {
+/* .sidebar {
     position: fixed;
-    /* Stay in place */
     top: 0px;
     left: 0;
     padding-top: 0px;
-    /* Space at the top */
     color: white;
-    /* Text color */
     box-shadow: 2px 0 5px #9cb0c4;
-    /* Subtle shadow */
     width: 200px;
-    /* Width of the sidebar */
     background-color: #f3f5f7;
-    /* Sidebar background color */
     overflow-y: auto;
-    /* Allow scrolling if content overflows */
     position: fixed;
     height: calc(100vh);
 }
@@ -30,7 +23,6 @@
     font-size: 16px;
     height: 40px;
     font-style: italic;
-    /* Adjust this based on your design */
     box-shadow: 0 2px 4px rgba(14, 13, 13, 0.1);
 }
 
@@ -50,47 +42,34 @@
     font-size: 1.5rem;
     font-weight: bold;
     padding: 15px 20px;
-    /* Space around the brand */
     text-decoration: none;
-    /* Remove underline */
     color: #f8c291;
-    /* Brand color */
 }
 
 .sidebar-nav {
     list-style-type: none;
-    /* Remove bullet points */
     padding: 0;
-    /* Remove padding */
 }
 
 .sidebar-item {
     padding: 10px 20px;
-    /* Space around items */
     margin-bottom: 20px;
 }
 
 .sidebar-link {
     color: #070707;
-    /* Light gray color */
     text-decoration: none;
-    /* Remove underline */
     display: block;
-    /* Full width */
     transition: color 0.3s;
-    /* Smooth color change */
 }
 
 .sidebar-link:hover {
     color: #f8c291;
-    /* Change color on hover */
 }
 
 .sidebar-link.active {
     font-weight: bold;
-    /* Make active link bold */
     color: #f8c291;
-    /* Active link color */
 }
 
 .navbar-image {
@@ -102,4 +81,135 @@
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+
+/* Container for sidebar and main content */
+
+
+/* Sidebar styling */
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #6199da;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 0;
+    left: 0;
+    top: 0;
+    padding-top: 60px;
+    transition: width 0.3s ease;
+    text-decoration: none;
+    z-index: 1010;
+    justify-content: space-between;
+}
+
+.sidebar-nav {
+    list-style: none;
+}
+
+.sidebar-item {
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+
+/* Collapsed sidebar */
+
+.sidebar-collapsed {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+
+/* Main content area */
+
+.main-content {
+    margin-left: 250px;
+    /* same as the default sidebar width */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+
+/* Adjust the margin when the sidebar is collapsed */
+
+.sidebar-collapsed~.main-content {
+    margin-left: 0;
+}
+
+
+/* Toggle button styling */
+
+.sidebar-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    flex-basis: 45%;
+}
+
+.container {
+    display: flex;
+    padding: 0%;
+}
+
+.top-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+    padding: 5px;
+    z-index: 1020;
+}
+
+.website-name {
+    font-size: 3pt;
+    white-space: nowrap;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    flex-basis: 45%;
+    width: 100px;
+    margin-left: 10px;
+}
+
+.sidebar-toggle:hover {
+    color: #575757;
+}
+
+
+/* Media query to handle responsiveness */
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+    .sidebar-collapsed {
+        width: 0;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+.website-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: aliceblue;
 }

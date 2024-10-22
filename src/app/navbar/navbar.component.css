@@ -7,8 +7,9 @@
     padding: 10px;
     position: fixed;
     top: 0;
-    right: 0;
-    width: calc(100% - 200px);
+    left: 0;
+    /* width: calc(100% - 200px); */
+    width: 100%;
     /* Ensure the navbar stretches across the full width */
     height: 60px;
     /* Adjust height as needed */
@@ -19,6 +20,7 @@
     overflow: hidden;
     /* Prevent any overflow issues */
     display: flex;
+    z-index: 1000;
 }
 
 .main {
