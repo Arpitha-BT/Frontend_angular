@@ -1,11 +1,8 @@
-/* Styling for the boxes */
-.box {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Add space between rows */
-  }
-  
+.container.mt-4 {
+    margin-top: 50px;
+    margin-left: 250px;
+    /* Add a left margin equal to the sidebar's width */
+    width: calc(100% - 250px);
+    /* Space calculation for the content area */
+    z-index: 1030;
+}

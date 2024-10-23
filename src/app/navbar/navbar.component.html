@@ -1,9 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-custom">
-    <!-- <div class="container-fluid">
-        <div class="main">
-            <div>
-
-            </div>
+    <div class="navbar-content">
+        <!-- Fullscreen icon on the left -->
+        <div class="navbar-fullscreen" style="margin-left: auto;">
+            <i class="fa fa-expand-arrows-alt fullscreen-icon" title="fullscreen-icon" (click)="toggleFullScreen()"></i>
         </div>
-    </div> -->
+
+        <!-- Click Me button on the right -->
+        <div class="navbar-button" style="margin-left: auto;">
+            <button class="clickme-button" (click)="navigateToHome()">Click me</button>
+        </div>
+    </div>
 </nav>

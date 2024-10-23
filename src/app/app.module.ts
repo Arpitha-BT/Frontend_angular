@@ -13,6 +13,10 @@ import { AboutComponent } from './about/about.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms'; 
+import { AuthGuard} from './auth-guard.guard';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +25,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     NavbarComponent,
     AboutComponent,
     SidebarComponent,
-    
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -32,11 +36,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatMenuModule,
     MatIconModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    [AuthGuard]
   ],
   bootstrap: [AppComponent]
 })
