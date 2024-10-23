@@ -2,7 +2,8 @@
     margin-top: 60px;
     margin-left: 250px;
     /* padding: 20px; */
-    overflow: auto;
+    /* overflow: auto; */
+    overflow-y:scroll;
 }
 
 .app-sidebar {
